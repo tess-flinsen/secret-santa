@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Nunito:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+    <title>Secret Santa</title>
+</head>
+
+<body>
+    <nav class="navigation-bar">
+        <div class="light-bulb">
+            <img src="images/Light Bulb.png">
+        </div>
+        <div class="name-logo">
+            <img class="logo" src="images/logo.png" alt="christmas tree - the company logo"><h1>Secret<span class="green-logo">Santa</span></h1>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#mainForm" class="scrollToSection text-green">New</a>
+            <a href="#mainForm" class="scrollToSection" >Popular</a>
+            <a href="#mainForm" class="scrollToSection">Gifts</a>
+            <a href="#mainForm" class="scrollToSection">Cards</a>
+            </ul>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('#mainForm')">Sign In</button>
+            <button onclick="scrollToSection('#mainForm')">Sign Up</button>
+        </div>
+        <div class="background-overlay"></div>
+    </nav>
+    
+    <section class="christmas-time section">
+        <div class="snow-ball-container"></div>
+        <div class="christmas-page">
+            <h2 class="page-heading">Hey, it's Christmas time!</h2>
+            <p class="page-text">Find the perfect holiday gift for everyone on your list this year, no matter what's your budget.</p>
+            <button class="page-button" onclick="scrollToSection('#mainForm')">Explore now</button>
+        </div>
+        <img src="images/Santa.png">
+    </section>
+    
+    <section class="santa-is-coming section">
+        <img src="images/Santa Image.png">
+        <div class="christmas-page">
+            <h2 class="page-heading">Santa Claus is Coming</h2>
+            <p class="page-text">Fill your Christmas holiday with good cheer, joyful decorations, and unforgettable experience.
+                Fell free to attend our Christmas event with your childrem and family and celebrate the most
+                anticipated winter holiday. From Christmas carols to activities for adults and children.
+                Santa has a lot to offer.
+            </p>
+            <button class="page-button" onclick="scrollToSection('#mainForm')">Get your Gift</button>
+        </div>
+    </section>
+
+    <section class="christmas-wish section">
+        <div class="christmas-page">
+            <h2 class="page-heading">Christmas wish and party</h2>
+            <p class="page-text">Fill your Christmas holiday with good cheer, joyful decorations, and unforgettable experience. Feel free to attend
+                 our Christmas event with your children and family and celebrate the most anticipated winter holiday. From Christmas
+                  carols to activities for adults and children, Sannta has a lot to offer.</p>
+            <button class="page-button" onclick="scrollToSection('#mainForm')">Join the Party</button>
+        </div>
+        <img class="tree-img"  src="images/Tree Image.png">
+    </section>
+
+    <section class="gift-items">
+        <div class="gift-items-title">
+            <h2 class="page-heading">Gift Items</h2>
+            <p class="smaller-text">Christmas is an annual festival commemorating the birth of Jesus Christ, a cultural celebration among billions of people around the world.</p>
+        </div>
+        <div class="mini-cards">
+            <div class="mini-card">
+                <div class="image-box">
+                    <img src="images/Small Santa.png" alt="small Santa in a hat icon">
+                </div>
+                <h3>Hat</h3>
+                <p class="smaller-text">Inspirational Christmas Greetings Messages for your loved ones - whether you're sending a small gift to grandma or need something special to write for.</p>
+            </div>
+            <div class="mini-card">
+                <div class="image-box">
+                    <img src="images/Small tree.png" alt="small christmas tree icon">
+                </div>
+                <h3>Tree</h3>
+                <p class="smaller-text">Inspirational Christmas Greetings Messages for your loved ones - whether you're sending a small gift to grandma or need something special to write for.</p>
+            </div>
+            <div class="mini-card">
+                <div class="image-box">
+                    <img src="images/Jingle Bell.png" alt="small bell icon">
+                </div>
+                <h3>Bell</h3>
+                <p class="smaller-text">Inspirational Christmas Greetings Messages for your loved ones - whether you're sending a small gift to grandma or need something special to write for.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-event">
+        <div class="upper-part"></div>
+        <img class="about-event-img" src="images/Golden Tree.png" alt="christmas tree with golden presents">
+        <div class="about-content">
+            <div class="about-heading">
+                <h2 class="page-heading">About the live event</h2>
+                <p class="page-text">Fill your Christmas holiday with good cheer, joyful decorations, and unforgettable experience.
+                    Fell free to attend our Christmas event with your childrem and family and celebrate the most
+                    anticipated winter holiday. From Christmas carols to activities for adults and children,
+                    Santa has a lot to offer.</p>
+            </div>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="image-box">
+                        <img src="images/Wreath.png" alt="a wreath">
+                    </div>
+                    <h3 class="event-text">Beautiful design</h3>
+                    <p class="page-text">Contrary to popular belief, Lorem ipsum is not simply random text.</p>
+                </div>
+                <div class="about-card">
+                    <div class="image-box">
+                        <img src="images/Bell.png" alt="a bell">
+                    </div>
+                    <h3 class="event-text">Great Sound</h3>
+                    <p class="page-text">Contrary to popular belief, Lorem ipsum is not simply random text.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="join-party" id="mainForm">
+        <div class="form-container">
+            <img class="icon" src="images/Gift Box.png">
+            <h1 class="page-heading">Join the party</h1>
+            <form action="" class="main-form">
+                <h3>Contact Us</h3>
+                <p>Please fill this from in a decent maner</p>
+                <input name="fullName" type="text" placeholder="Full Name" autocomplete="off">
+                <input name="email" type="email" placeholder="Email Address" autocomplete="off">
+                <input name="subject" type="text" placeholder="Subject" autocomplete="off">
+                <button class="page-button" onclick="setToCookies()">Submit</button>
+            </form>
+        </div>
+        <div class="santa-gifts">
+            <img class="floating-gifts" src="images/Floating Gifts.png">
+            <img class="santa-deers" src="images/Santa With Deers.png">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>Stay In Touch</h3>
+                <p>Don't be a stranger and start following us :)</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img class="social" src="images/Facebook.png"></a>
+                <a href="#"><img class="social" src="images/Instagram.png"></a>
+                <a href="#"><img class="social" src="images/Discord.png"></a>
+                <a href="#"><img class="social" src="images/Dribbble.png"></a>
+            </div>
+        </div>
+        <img class="footer-img" src="images/Footer Bottom.png">
+    </footer>
+
+</body>
+</html>
